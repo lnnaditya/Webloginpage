@@ -22,7 +22,7 @@ protected WebDriver driver;
 			}
 			// TO launch Chrome Browser
 			else if (browser.equalsIgnoreCase("chrome")) {
-				System.setProperty("webdriver.chrome.driver",".\\src\\test\\resources\\Driver\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","F:\\cts\\chromedriver_win32\\chromedriver.exe");
 				driver=new ChromeDriver();
 
 			}

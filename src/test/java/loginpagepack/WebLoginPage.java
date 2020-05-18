@@ -9,25 +9,29 @@ import org.openqa.selenium.support.PageFactory;
 
 import datapack.ExcelClass;
 
-public class WebLoginPage {
+public class WebLoginPage   {
 	WebDriver driver;
 	ExcelClass data;
+	@FindBy(xpath = "//div[@id='MenuContent']/a[2]")//xpath for signin
+	WebElement signin;
 	@FindBy(name = "username")//path for username
 	WebElement username;
 	@FindBy(name = "password")//path for password
 	WebElement password;
 	@FindBy(name = "signon")//path for signon
 	WebElement login;
-	@FindBy(linkText ="Register Now!")//path for register
-	WebElement register;
 
-	public void SigninPage(WebDriver driver) {
+
+	
+	public  WebLoginPage(WebDriver driver) {
 
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
 	public void send_User1(String usernamedata, String passworddata) throws IOException {
+		
+		//signin.click();
 		username.clear();//clear the userid box 
 		password.clear();//clear the password box
 
@@ -35,12 +39,13 @@ public class WebLoginPage {
 
 		username.sendKeys(usernamedata);//taking username1 from excel sheet
 		password.sendKeys(passworddata);//taking password1 from excel sheet
+	    //login.click();
 	}
 
 	
 
-	public void click_register() {
-		register.click();
+	public void click_signin() {
+		signin.click();
 	}
 
 	public void click_login() {
@@ -51,3 +56,4 @@ public class WebLoginPage {
 
 
 }
+

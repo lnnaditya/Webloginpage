@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-18T12:03:13 IST" name="Default suite" finished-at="2020-05-18T12:03:15 IST" duration-ms="2263">
+    <groups>
+    </groups>
+    <test started-at="2020-05-18T12:03:13 IST" name="Default test" finished-at="2020-05-18T12:03:15 IST" duration-ms="2263">
+      <class name="testpack.LoginTest">
+        <test-method is-config="true" signature="registerWebDriver()[pri:0, instance:testpack.LoginTest@37918c79]" started-at="2020-05-18T12:03:05 IST" name="registerWebDriver" finished-at="2020-05-18T12:03:13 IST" duration-ms="7466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWebDriver -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:testpack.LoginTest@37918c79]" started-at="2020-05-18T12:03:14 IST" name="login" data-provider="user_credentails" finished-at="2020-05-18T12:03:15 IST" duration-ms="1135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lnnaditya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nenuchepanu@2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testpack.LoginTest@37918c79]" started-at="2020-05-18T12:03:15 IST" name="closeBrowser" finished-at="2020-05-18T12:03:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testpack.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
